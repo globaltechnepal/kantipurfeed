@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "../header.php"; ?>
 <div class="col-6 d-flex">
   <div class="p-1 mb-2 col-5 bg-dark text-white text-center">Vendor Checkout Completed List</div>
 </div>
@@ -146,4 +146,4 @@
       $(this).parent().parent().parent().next('.childTable').toggle(); 
     });
 </script>
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>

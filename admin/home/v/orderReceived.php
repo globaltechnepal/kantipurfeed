@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include '../header.php';
 ?>
 <style>table.dataTable tbody td {
   padding: 0px 10px !important;
@@ -79,5 +79,5 @@ padding: 7px !important;
 <!-- datatable end -->
 <!-- datatable end -->
 <?php
-include 'footer.php';
+include '../footer.php';
 ?>

@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "../header.php" ?>
 <style>table.dataTable tbody td {
   padding: 0px 10px !important;
 }
@@ -712,5 +712,5 @@ $(document).on('click',".unckeck_btn",function(){
 <!--close checkout and convert into delivery detail -->
 <!--close checkout and convert into delivery detail -->
 <?php
-include 'footer.php';
+include '../footer.php';
 ?>

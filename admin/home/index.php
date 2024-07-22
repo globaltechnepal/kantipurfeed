@@ -27,6 +27,16 @@
 <main id="main" class="main">
 <?php 
    if ($o=='dashboard') { include("v/dashboard.php"); }
+   if ($o=='change.password') { include("v/changepassword.php"); }
+   if ($o=='new.category') { include("v/newCategory.php"); }
+   if ($o=='new.launch') { include("v/newLaunch.php"); }
+   if ($o=='add.color') { include("v/colorpeaker.php"); }
+   if ($o=='order') { include("v/orderReceived.php"); }
+   
+   if ($o=='checkout') { include("v/checkout.php"); }
+   if ($o=='delivered.list') { include("v/delivered.php"); }
+   if ($o=='vendor.checkout') { include("v/vendor_checkout.php"); }
+   if ($o=='vendor.delivered.list') { include("v/vendor_delivered.php"); }
 ?>
 
 </main>

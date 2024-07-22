@@ -1,10 +1,10 @@
-<?php include "header.php" ?>
+<?php include "../header.php" ?>
 
   <form action="#" method="post">
     <div class="row row-cols-1 row-cols-md-2 p-2">
       <div class="col">
         <div class="col-12 text-center">
-          <img src="img/114628-reset-password.gif" class="w-75"><br>
+          <img src="../img/114628-reset-password.gif" class="w-75"><br>
         </div>
       </div>
       <div class="col">
@@ -44,4 +44,4 @@ function passcheck(){
 </script>
   
 
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>

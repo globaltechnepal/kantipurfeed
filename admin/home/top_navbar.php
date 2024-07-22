@@ -7,7 +7,7 @@
     <!-- logo -->
     <!-- logo -->
     <div class="col-3">
-        <img src="img/logo/deli-logo.png" alt="" class="w-50">
+        <img src="../img/logo/deli-logo.png" alt="" class="w-50">
     </div>
     <!-- logo -->
     <!-- logo -->
@@ -42,10 +42,12 @@
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="changepassword.php">
-                    <i class="bi bi-lock-fill"></i>
-                    Change Password
-                </a>
+
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='change.password'>
+                <button type="submit" class="dropdown-item" style="border:none"><i class="bi bi-lock-fill"></i><span>Change Password</span></button>
+                </form>
+
                 <!--<div class="dropdown-divider"></div>-->
                 <a class="dropdown-item" href="logout.php" id="logBtn">
                     <i class="bi bi-box-arrow-right"></i>

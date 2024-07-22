@@ -1,5 +1,5 @@
 <?php 
-include "header.php"
+include "../header.php"
 ?>
 <style>table.dataTable tbody td {
   padding: 0px 10px !important;
@@ -434,5 +434,5 @@ $(".close_data_btn").click(function(){
 <!--closed by detail -->
 <!--closed by detail -->
 <?php 
-include "footer.php"
+include "../footer.php"
 ?>

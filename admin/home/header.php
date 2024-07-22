@@ -75,40 +75,43 @@ if (isset($_SESSION['adminemail']) && !empty($_SESSION['adminemail'])) {
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
-            <!-- Nav Item - Dashboard -->
+            
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">
+                    <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
-            <!-- Divider -->
+
             <hr class="sidebar-divider">
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Interface
-            </div>
-            <!--add product and category -->
+
+            <div class="sidebar-heading">Interface</div>
+            
             <li class="nav-item">
-                <a class="nav-link" href="newCategory.php">
-                    <i class="bi bi-collection-fill"></i>
-                    <span>Product Category</span></a>
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='new.category'>
+                <button type="submit" class="nav-link" style="border:none; background:transparent;" ><i class="bi bi-collection-fill"></i><span>Product Category</span></button>
+                </form>
             </li>
-                        <li class="nav-item">
-                <a class="nav-link" href="newLaunch.php">
-                    <i class="bi bi-plus-circle-dotted"></i>
-                    <span>New Launch</span></a>
-            </li>
+            
             <li class="nav-item">
-                <a class="nav-link" href="colorpeaker.php">
-                    <i class="bi bi-plus-circle-dotted"></i>
-                    <span>Add Color</span></a>
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='new.launch'>
+                <button type="submit" class="nav-link" style="border:none; background:transparent;" ><i class="bi bi-plus-circle-dotted"></i><span>New Launch</span></button>
+                </form>
             </li>
-            </li>
-            <!-- Nav Item - Charts -->
+
             <li class="nav-item">
-                <a class="nav-link" href="orderReceived.php">
-                    <i class="bi bi-cart-plus"></i>
-                    <span>Order</span></a>
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='add.color'>
+                <button type="submit" class="nav-link" style="border:none; background:transparent;" ><i class="bi bi-plus-circle-dotted"></i><span>Add Color</span></button>
+                </form>
+            </li>
+
+            <li class="nav-item">
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='order'>
+                <button type="submit" class="nav-link" style="border:none; background:transparent;" ><i class="bi bi-cart-plus"></i><span>Order</span></button>
+                </form>
             </li>
 
             <!-- Nav Item - checkout -->
@@ -122,10 +125,27 @@ if (isset($_SESSION['adminemail']) && !empty($_SESSION['adminemail'])) {
                 <div id="collapsePages1" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Checkout</h6>
-                        <a class="collapse-item" href="checkout.php">Checkout</a>
-                        <a class="collapse-item" href="delivered.php">Delivered List</a>
-                        <a class="collapse-item" href="vendor_checkout.php">Vendor Checkout</a>
-                        <a class="collapse-item" href="vendor_delivered.php">Vendor Delivered List</a>
+                        
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='checkout'>
+                <button type="submit" class="collapse-item" style="border:none; background:transparent;" ><span>Checkout</span></button>
+                </form>
+                
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='delivered.list'>
+                <button type="submit" class="collapse-item" style="border:none; background:transparent;" ><span>Delivered List</span></button>
+                </form>
+
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='vendor.checkout'>
+                <button type="submit" class="collapse-item" style="border:none; background:transparent;" ><span>Vendor Checkout</span></button>
+                </form>
+                
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='vendor.delivered.list'>
+                <button type="submit" class="collapse-item" style="border:none; background:transparent;" ><span>Vendor Delivered List</span></button>
+                </form>
+
                     </div>
                 </div>
             </li>
@@ -133,9 +153,7 @@ if (isset($_SESSION['adminemail']) && !empty($_SESSION['adminemail'])) {
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
+            <div class="sidebar-heading">Addons</div>
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"

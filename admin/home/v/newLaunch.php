@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "../header.php" ?>
 <div class=" m-4" style="border: 1px solid;">
     <div class="p-3 mb-2 col bg-dark text-white text-center">New Lunch</div>
     <div
@@ -56,4 +56,4 @@
 
 
 
-<?php include "footer.php" ?>
+<?php include "../footer.php" ?>

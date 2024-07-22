@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "../header.php"; ?>
 <div class="col-6 d-flex">
   <div class="p-1 mb-2 col-5 bg-dark text-white text-center">Vendor Checkout List</div>
 </div>
@@ -431,7 +431,7 @@ $(".numberOnly").on("keypress", function (e) {
 
 </script>
 <?php
-include "footer.php" 
+include "../footer.php" 
 ?>
 
     

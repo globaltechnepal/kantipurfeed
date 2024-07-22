@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "../header.php" ?>
 <style>table.dataTable tbody td {
   padding: 0px 10px !important;
 }
@@ -96,4 +96,4 @@ padding: 7px !important;
 <!-- add new color -->
 <!-- add new color  -->
 
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>
