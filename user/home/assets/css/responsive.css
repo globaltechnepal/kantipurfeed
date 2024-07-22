@@ -1,0 +1,5 @@
+@media (max-width: 575px){
+    .font_size_in_mobile{
+        font-size:.6em !important;
+    }
+}
