@@ -11,7 +11,7 @@ date_default_timezone_set("asia/kathmandu");
 //   $username = 'ultima_client';
 //   $password = 'Ultima@2022';
 //   $dbname = 'ultima_ultima';
-    $connect = new PDO("mysql:host=localhost;dbname=kantipurfeed_delinepal","kantipurfeed_delinepalUser", "%pY9Kby9*k6b");
+    $connect = new PDO("mysql:host=localhost;dbname=kantipurfeed","root", "");
 
 // $data = array();
 // demo 

@@ -45,7 +45,7 @@ if (isset($_SESSION['adminemail']) && !empty($_SESSION['adminemail'])) {
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
     <!-- jquery script -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
 
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"

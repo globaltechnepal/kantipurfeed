@@ -123,9 +123,9 @@ function connectdbonce()
 
     // server user name 
     $localhost = 'localhost';
-    $username = 'kantipurfeed_delinepalUser';
-    $password = '%pY9Kby9*k6b';
-    $dbname = 'kantipurfeed_delinepal';
+    $username = 'root';
+    $password = '';
+    $dbname = 'kantipurfeed';
 
     // ==============================connect database now=======================
 

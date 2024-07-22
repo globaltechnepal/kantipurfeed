@@ -36,7 +36,7 @@
         }
         else {
             $.ajax({
-                url: "assets/library/database.php",
+                url: "../assets/library/database.php",
                 method: "POST",
                 data: { vendor_change_password: newPass, userEmail: userEmail,oldPass:oldPass },
                 success: function (data) {

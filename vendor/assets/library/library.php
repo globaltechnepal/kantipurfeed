@@ -509,7 +509,7 @@ $insert_ok = run_insert_query($insert_query);// echo "INsert stat : ".$insert_ok
 if($insert_ok){
 $to = $useremail;
 $sub = "Verification Code";
-$body = "Dear User,\n Your Verification code = ".$code."\nPlease enter this code to verify your email. Proceed to verify email:https://kantipurfeed.com/verify_email.php?email=".$useremail." \nThank You!.";
+$body = "Dear User,\n Your Verification code = ".$code."\nPlease enter this code to verify your email. Proceed to verify email:http://localhost:8080/kantipurfeed/verify_email.php?email=".$useremail." \nThank You!.";
 $from = "account@delinepal.com";
 return sendEmail($to,$sub,$body,$from);}
 else{

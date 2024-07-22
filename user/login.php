@@ -24,7 +24,7 @@
 <body>
   <nav class="navbar navbar-expand-lg" style="background:white">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://kantipurfeed.com/"><img src="assets/images/deli-logo.png" class="w-50"></a>
+      <a class="navbar-brand" href="http://localhost:8080/kantipurfeed/"><img src="assets/images/deli-logo.png" class="w-50"></a>
     </div>
     </div>
   </nav>

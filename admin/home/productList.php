@@ -175,7 +175,7 @@ padding: 7px !important;
     // alert("i amin");
     let formData = new FormData();
     formData.append("file", addPrimary_image.files[0]);
-    await fetch('library/image_uploader.php', {
+    await fetch('../library/image_uploader.php', {
       method: "POST",
       body: formData
     });
@@ -183,7 +183,7 @@ padding: 7px !important;
   async function add_secondary_image() {
     let formData = new FormData();
     formData.append("file", addSecondary_image.files[0]);
-    await fetch('library/image_uploader.php', {
+    await fetch('../library/image_uploader.php', {
       method: "POST",
       body: formData
     });
@@ -255,7 +255,7 @@ padding: 7px !important;
     // alert("i amin");
     let formData = new FormData();
     formData.append("file", update_primary_image.files[0]);
-    await fetch('library/image_uploader.php', {
+    await fetch('../library/image_uploader.php', {
       method: "POST",
       body: formData
     });
@@ -363,7 +363,7 @@ padding: 7px !important;
     }
     else {
       $.ajax({
-        url: "library/database.php",
+        url: "../library/database.php",
         method: "POST",
         data: { updateProduct_code:updateProduct_code, update_product_name: update_product_name,updateSpecification:updateSpecification, update_p_id: update_p_id, update_sell_Price: update_sell_Price, update_actual_Price: update_actual_Price, update_primary_image: update_primary_image, update_secondary_image: update_secondary_image,update_wholesale_Price:update_wholesale_Price,update_dealer_Price:update_dealer_Price,update_retailer_Price:update_retailer_Price },
         success: function () {

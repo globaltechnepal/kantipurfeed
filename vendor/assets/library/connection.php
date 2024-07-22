@@ -9,9 +9,9 @@ function connectdb()
 //   $con = mysqli_connect($localhost, $root, $password, $dbname);
   //   server user name 
     $servername = 'localhost';
-    $username = 'kantipurfeed_delinepalUser';
-    $password = '%pY9Kby9*k6b';
-    $dbname = 'kantipurfeed_delinepal';
+    $username = 'root';
+    $password = '';
+    $dbname = 'kantipurfeed';
 $con = mysqli_connect($servername, $username, $password, $dbname);
   // ==============================connect database now=======================
 

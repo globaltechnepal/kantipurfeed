@@ -2,9 +2,9 @@
 function dbConnecting()
 {
     $servername = 'localhost';
-    $username = 'kantipurfeed_delinepalUser';
-    $password = '%pY9Kby9*k6b';
-    $dbname = 'kantipurfeed_delinepal';
+    $username = 'root';
+    $password = '';
+    $dbname = 'kantipurfeed';
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     if (!$conn) {
         echo "Unable to connect to the database";

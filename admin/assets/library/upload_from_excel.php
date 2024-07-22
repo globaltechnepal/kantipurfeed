@@ -45,7 +45,7 @@ function insert_excel_data($array_data,$vendor_email,$discountPercent){
             );
             $to = $vendor_email;
             $subject ="Order Place for Deli Nepal";
-            $message ="Dear ".$vendor_email." Your order for delinepal place successfully. Please wait, Our team will contact you for the confirmation. You can check what you order here. http://delinepal.com/assets/vendor/order_history.php.";
+            $message ="Dear ".$vendor_email." Your order for delinepal place successfully. Please wait, Our team will contact you for the confirmation. You can check what you order here. http://localhost:8080/kantipurfeed/assets/vendor/home/order_history.php.";
             $from = "sales@delinepal.com";
             $header = "From: $from";
             mail($to,$subject, $message,$header);

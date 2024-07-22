@@ -62,7 +62,7 @@ $('#pVarientSubmit').click(function(){
 else
   {
     $.ajax({
-      url:"library/database.php",
+      url:"../library/database.php",
       method:"POST",
       data:{id:id,product_name:product_name,color_name:color_name,stock_in:stock_in,defective:defective,fimg:fimg,dimg:dimg},
       success:function(data)

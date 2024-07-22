@@ -6,7 +6,7 @@ if (isset($_SESSION["email"])) {
     // die();
 ?>
 <script>
-    window.location.href = 'http://kantipurfeed.com/';
+    window.location.href = 'http://localhost:8080/kantipurfeed/';
 </script>
 <?php
 }

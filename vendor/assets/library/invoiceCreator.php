@@ -122,9 +122,9 @@ function print_My_Invoice($get_ref_id){
     $html .=$total_part;
 	$html .=$table_footer_part;
 	$html .='<div><strong>Delinepal Pvt. Ltd</strong></div><div><small>Teku, Kathmandu</small></div>';
-    $html .='<div><img src="https://kantipurfeed.com/logo.png" alt="logo" style="width:15%;border-bottom:2px solid black;padding-bottom:2px;"></div>';
+    $html .='<div><img src="http://localhost:8080/kantipurfeed/logo.png" alt="logo" style="width:15%;border-bottom:2px solid black;padding-bottom:2px;"></div>';
      
-	$html .='<br><div>Order Reference Code: <strong>'.$get_ref_id.'</strong></div> <div style="margin:10px 0px;">You can check your order here <a style="background: #0498be;padding: 8px;color: white;border-radius: 4px;" href="https://kantipurfeed.com/cartOut.php?refID='.$get_ref_id.'">Check</a></div>';
+	$html .='<br><div>Order Reference Code: <strong>'.$get_ref_id.'</strong></div> <div style="margin:10px 0px;">You can check your order here <a style="background: #0498be;padding: 8px;color: white;border-radius: 4px;" href="http://localhost:8080/kantipurfeed/cartOut.php?refID='.$get_ref_id.'">Check</a></div>';
     $html .='</div>';
         //echo "<textarea>".$html."</textarea>"; 
        
