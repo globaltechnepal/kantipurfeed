@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "../header.php" ?>
 <div class=" m-4" style="border: 1px solid;">
 <div class="p-3 mb-2 col bg-dark text-white text-center">Review</div>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-6 mx-2 text-center text-danger fw-bold">
@@ -24,4 +24,4 @@ for($i=1;$i<15;$i++){
 ?>  
 </div>
 </div>
-<?php include "footer.php" ?>
+<?php include "../footer.php" ?>

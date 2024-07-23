@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "../header.php" ?>
 <style>table.dataTable tbody td {
   padding: 0px 10px !important;
 }
@@ -123,8 +123,6 @@ padding: 7px !important;
   }
 </script>
 <!-- script to add carousel image -->
-<!-- script to add carousel image -->
 
 <!-- add new carousel image -->
-<!-- add new carousel image -->
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>

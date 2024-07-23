@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include '../header.php'; ?>
 <style>
     table.dataTable tbody td {
   padding: 0px 10px;
@@ -79,4 +79,4 @@ INNER JOIN productVariant_image pv_images ON pv_images.product_varient_id=pv.id"
 <!-- 000.container-fluid -->
 
 
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>

@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include '../header.php'; ?>
 <!--<div class="col-6 d-flex">-->
 <style>table.dataTable tbody td {
   padding: 0px 10px !important;
@@ -54,4 +54,4 @@ if (mysqli_num_rows($req) > 0) {
 <!-- datatable end -->
 <!-- datatable end -->
 
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>

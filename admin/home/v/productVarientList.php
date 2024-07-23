@@ -1,4 +1,4 @@
-<?php  include "header.php" ?>
+<?php  include "../header.php" ?>
 <style>
     table.dataTable tbody td {
   padding: 0px 10px;
@@ -13,7 +13,8 @@ padding: 7px !important;
     <div class="col-12">
         <div class="col-12 d-flex">
             <?php
-                $p_ID = $_GET['id'];
+                $p_ID = (isset($_POST['id']) ? $_POST['id'] : null);
+                //$p_ID = $_GET['id'];
                 $query="SELECT  pv.`id` as pvIDH,p.`id` AS pid, `product_name`,`primary_image` FROM `productvariant` pv
                 RIGHT JOIN products p on p.id= pv.product_id WHERE p.id=$p_ID limit 1";
                 $conn = dbConnecting();
@@ -782,4 +783,4 @@ $(".check_max_return").on('keyup',function(){
 <!-- update product varient -->
 <!-- update product varient -->
 
- <?php include "footer.php"; ?>          
+ <?php include "../footer.php"; ?>          

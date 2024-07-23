@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "../header.php" ?>
 <style>table.dataTable tbody td {
   padding: 0px 10px !important;
 }
@@ -11,15 +11,16 @@ padding: 7px !important;
 <div class="col-12">
   <div class="col-12">
     <?php
-    $cat_id = $_GET['id'];
-    $query = "SELECT `category_name`, `category_id` FROM `category` where category_id='$cat_id';";
+    $cat_id = (isset($_POST['id']) ? $_POST['id'] : null);
+    //$cat_id = $_GET['id'];
+    $query = "SELECT `category_name`, `category_id` FROM `category` where category_id='$cat_id'";
     $conn = dbConnecting();
     $req = mysqli_query($conn, $query) or die(mysqli_error($conn));
     if (mysqli_num_rows($req) > 0) {
       while ($data = mysqli_fetch_assoc($req)) { ?>
     <div class="col-12 d-flex">
       <div class="p-1 mb-2 col-2 bg-dark text-white text-center text-uppercase" <?php echo $data['category_id']; ?>>
-        <?php echo $data['category_name']; ?>
+        <?php echo $data['category_id']; ?>
       </div>&nbsp;&nbsp;
 
       <button type="button" class="btn btn-outline-secondary mb-2 addProduct" data-bs-target="#exampleModalToggle"
@@ -94,8 +95,13 @@ padding: 7px !important;
           <a name="deleteProducts" class="text-danger ms-2 me-2 text-center delete_item"
               data-del_item_name="product" data-del_item_id="<?php echo $data['productID']; ?>"><i
                 class="bi bi-trash-fill"></i></a>
-          <a class="text-success" href="productVarientList.php?id=<?php echo $data['productID']; ?>"><i
-                class="bi bi-caret-right-square"></i></a></td>
+                
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='product.varient.list'>
+                <input type="hidden" name='id' value='<?php echo $data['productID']; ?>'>
+                <button type="submit" class="text-success" style="border:none; background:transparent;" ><i class="bi bi-caret-right-square"></i></button>
+                </form>
+</td>
         </tr>
         <?php
             $i++;
@@ -376,4 +382,4 @@ padding: 7px !important;
 </script>
 <!-- Update product -->
 <!-- Update product -->
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>

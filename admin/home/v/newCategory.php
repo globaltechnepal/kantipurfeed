@@ -58,7 +58,12 @@ padding: 7px !important;
         <td>
           <a class="text-primary categories" data-category-id="<?php echo $data['category_id']; ?>" data-category-name="<?php echo $data['category_name']; ?>" data-category-type="<?php echo $data['category_type']; ?>" data-bs-target="#exampleModalToggle1" href="#exampleModalToggle1" data-bs-toggle="modal"><i class="bi bi-check2-circle"></i></a>
           <a name="delete_category" class="text-center ms-2 me-2 text-danger delete_item" data-del_item_id="<?php echo $data['id']; ?>" data-del_item_name="category"><i class="bi bi-trash-fill"></i></a>
-          <a class="text-success" href="productList.php?id=<?php echo $data['category_id']; ?>"><i class="bi bi-caret-right-square"></i></a>
+          
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='product.list'>
+                <input type="hidden" name='id' value='<?php echo $data['category_id']; ?>'>
+                <button type="submit" class="text-success" style="border:none; background:transparent;" ><i class="bi bi-caret-right-square"></i></button>
+                </form>
         </td>
       </tr>
   <?php

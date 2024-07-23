@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "../header.php" ?>
 <style>
     table.dataTable tbody td {
   padding: 1px 34px !important;
@@ -415,4 +415,4 @@ $(document).ready(function(){
 
 
 
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>

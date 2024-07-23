@@ -164,46 +164,64 @@ if (isset($_SESSION['adminemail']) && !empty($_SESSION['adminemail'])) {
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Page Control</h6>
-                        <a class="collapse-item" href="reviewForm.php">Reviews</a>
-                        <a class="collapse-item" href="changecarousel.php">Carousel</a>
-                        <a class="collapse-item" href="FAQsForm.php">FAQs</a>
+                        
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='review.form'>
+                <button type="submit" class="collapse-item" style="border:none; background:transparent;" ><span>Reviews</span></button>
+                </form>
+                
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='change.carousel'>
+                <button type="submit" class="collapse-item" style="border:none; background:transparent;" ><span>Carousel</span></button>
+                </form>
+                
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='faqs.form'>
+                <button type="submit" class="collapse-item" style="border:none; background:transparent;" ><span>FAQs</span></button>
+                </form>
+
                     </div>
                 </div>
             </li>
+
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="users.php">
-                    <i class="bi bi-person-circle"></i>
-                    <span>Users</span></a>
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='users'>
+                <button type="submit" class="nav-link" style="border:none; background:transparent;" ><i class="bi bi-person-circle"></i><span>Users</span></button>
+                </form>
             </li>
+
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="allproduct.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>All Products</span></a>
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='all.product'>
+                <button type="submit" class="nav-link" style="border:none; background:transparent;" ><i class="fas fa-fw fa-table"></i><span>All Products</span></button>
+                </form>
             </li>
+
             <?php if(give_level()=='superAdmin'){ ?>
             <li class="nav-item">
-                <a class="nav-link" href="subAdmin.php">
-                    <i class="bi bi-person-circle"></i>
-                    <span>Sub Admin</span></a>
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='subadmin'>
+                <button type="submit" class="nav-link" style="border:none; background:transparent;" ><i class="bi bi-person-circle"></i><span>Sub Admin</span></button>
+                </form>
             </li>
             
             <li class="nav-item">
-                <a class="nav-link" href="business.php">
-                    <i class="bi bi-shop-window"></i>
-                    <span>Business</span></a>
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='business'>
+                <button type="submit" class="nav-link" style="border:none; background:transparent;" ><i class="bi bi-shop-window"></i><span>Business</span></button>
+                </form>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="api_integration.php">
-                   <i class="bi bi-code-slash"></i>
-                    <span>Set Api</span></a>
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='api.integration'>
+                <button type="submit" class="nav-link" style="border:none; background:transparent;" ><i class="bi bi-code-slash"></i><span>Set API</span></button>
+                </form>
             </li>
-              <li class="nav-item">
-                <a class="nav-link" href="apitest_bikesh.php">
-                   <i class="bi bi-code-slash"></i>
-                    <span>Test Api</span></a>
-            </li>
+            
             <?php }?>
             
             <!-- Divider -->
