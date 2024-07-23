@@ -1,4 +1,12 @@
 <?php include "../header.php" ?>
+<?php 
+
+    if ($SUBMIT=='CHANGE_PASSWORD')  { 
+      include("../post/change_password_post.php"); 
+    } 
+
+?>
+
 
   <form action="#" method="post">
     <div class="row row-cols-1 row-cols-md-2 p-2">
@@ -19,7 +27,10 @@
 
                 <h5 id="passcheck"></h5>
                     
-              <button type="button" id="submitButton" class="btn col-4" style="background:red; color:white">Submit</button>
+                      <button type="button" id="submitButton" class="btn col-4" style="background:red; color:white">Submit</button>
+                      <input type="hidden" name="o" value="<?php print $o; ?>">
+                      <input type="hidden" name="submit" value="CHANGE_PASSWORD">
+                      <input type="hidden" name="id" value="<?php print $_SESSION['adminemail']; ?>">
                 
             </div>
           </div>

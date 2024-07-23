@@ -9,10 +9,9 @@
    if (strlen($o)==0){
         $o = "dashboard";
    }
-   
 
-   //include("../class/erp_function.php");
-   //$ERP = new erp_function();
+   include("../class/oms_function.php");
+   $OMS = new oms_function();
    include("header.php");
    
 ?>
