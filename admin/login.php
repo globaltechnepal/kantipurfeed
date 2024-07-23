@@ -1,6 +1,6 @@
 <?php
 
-session_start(); 
+//session_start(); 
 date_default_timezone_set("Asia/Kathmandu");
 
 // Include the database connection
@@ -43,7 +43,7 @@ if (isset($_POST["adminSubmit"])) {
 }
 
 // Close the database connection
-mysqli_close($connect);
+mysqli_close($connection);
 ?>
 
 
