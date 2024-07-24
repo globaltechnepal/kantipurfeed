@@ -26,6 +26,7 @@ if (isset($_POST["adminSubmit"])) {
             if ($rows > 0) {
                 $found_user = mysqli_fetch_assoc($rs);
                 $_SESSION['adminemail'] = $found_user['email'];
+                $_SESSION['success'] = "Welcome.";
 
                 if (!empty($_SESSION['adminemail'])) {
                     header('Location: home/index.php');

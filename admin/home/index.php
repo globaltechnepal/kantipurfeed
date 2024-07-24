@@ -24,6 +24,35 @@
 <BODY>
 
 <main id="main" class="main">
+
+<?php
+
+  		if(isset($_SESSION['success'])){
+  			echo "
+  				<div class='alert alert-success alert-dismissible fade show' role='alert' ID='alert'>
+			  	<p>".$_SESSION['success']."</p> 
+  				<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+    				<span aria-hidden='true'>&times;</span>
+  				</button>
+				</div>
+  			";
+  			unset($_SESSION['success']);
+  		}
+
+  		if(isset($_SESSION['error'])){
+  			echo "
+  				<div class='alert alert-danger alert-dismissible fade show' role='alert' ID='alert'>
+			  	<p>".$_SESSION['error']."</p> 
+  				<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+    				<span aria-hidden='true'>&times;</span>
+  				</button>
+				</div>
+  			";
+  			unset($_SESSION['error']);
+  		}
+  	?>
+
+
 <?php 
    if ($o=='dashboard') { include("v/dashboard.php"); }
    if ($o=='change.password') { include("v/changepassword.php"); }
@@ -51,8 +80,8 @@
 ?>
 
 </main>
-</BODY> 
 
-   </HTML>
+</BODY> 
+</HTML>
 
   <?php include("footer.php"); ?>

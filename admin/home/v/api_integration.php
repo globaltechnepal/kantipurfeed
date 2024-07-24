@@ -1,15 +1,14 @@
 <?php include "../header.php" ?>
-<style>
-    table.dataTable tbody td {
-  padding: 1px 34px !important;
-    }
-  .dt-button{
-height: 33px !important;
-font-size: 10px !important;
-padding: 7px !important;
-    }
+<?php 
+
+    $SUBMIT = (isset($_POST['submit']) ? $_POST['submit'] : null);
     
-</style>
+    if ($SUBMIT=='API_DELETE')  { 
+      include("../post/api_integration_post.php"); 
+    } 
+
+?>
+
 <div class="col-12">
   <div class="col-12 d-flex">
     <div class="p-1 mb-2 bg-dark text-white text-center text-uppercase">
@@ -18,7 +17,7 @@ padding: 7px !important;
     <button type="button" class="btn btn-outline-secondary col-1 ms-3 mb-2" data-bs-target="#exampleModalToggle"
       href="#exampleModalToggle" data-bs-toggle="modal" id="subm"><i class="bi bi-code-slash"></i> Add API</button>
   </div>
-  <!-- datatable start -->
+
   <!-- datatable start -->
   <table id="table_id" class="display">
     <thead>
@@ -30,35 +29,42 @@ padding: 7px !important;
       </tr>
     </thead>
    <tbody>
+
   <?php
-  $myQuery = "SELECT * FROM `api` ORDER BY id DESC;";
-  $conn = dbConnecting();
-  $req = mysqli_query($conn, $myQuery) or die(mysqli_error($conn));
-  if (mysqli_num_rows($req) > 0) {
-    $i = 1;
-    while ($data = mysqli_fetch_assoc($req)) { ?>
+  
+  $i = 0;
+  $DATA_BANK = $OMS->OMS_DATA('API_INFO');
+  foreach ($DATA_BANK AS $ROW) {
+      $i = $i + 1; 
+      $ID = $ROW['id']; 
+      $API_NAME = $ROW['api_name'];  
+      $API_VALUE = $ROW['api_value']; 
+  ?>
       <tr>
         <td style="font-size:1rem;">
           <?php echo $i ?>
         </td>
         <td style="font-size:1rem;">
-          <?php echo $data['api_name'] ?>
+          <?php echo $API_NAME; ?>
         </td>
         <td style="font-size:1rem;">
-          <?php echo $data['api_value'] ?>
+          <?php echo $API_VALUE; ?>
         </td>
         <td>
-          <!--<span style="display:flex; justify-content:center;"><a class="text-success" href="#" data-id="<?php echo $data['id']; ?>"><i class="fas fa-edit"></i></a>-->
-          <button style="out-line:none; border:none; background:none;"  data-id="<?php echo $data['id'] ?>" data-apiName="<?php echo $data['api_name']; ?>" data-apiValue="<?php echo $data['api_value']; ?>" id="btnUpdate" onClick="btnUpdate" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fas fa-edit"></i></button>
-       <a name="api_delete" class="text-center ms-2 me-2 text-danger" href="library/api_delete.php?id=<?php echo $data['id']; ?>" onclick="return confirm('Are you sure you want to delete?')">
-    <i class="bi bi-trash-fill"></i>
-</a>
+          <button style="out-line:none; border:none; background:none;" data-id="<?php echo $ID; ?>" data-apiName="<?php echo $API_NAME; ?>" data-apiValue="<?php echo $API_VALUE; ?>" id="btnUpdate" onClick="btnUpdate" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fas fa-edit"></i></button>
+
+                <form action='index.php' method='post'>
+                <input type="hidden" name='o' value='<?php print $o; ?>'>
+                <input type="hidden" name='id' value='<?php print $ID; ?>'>
+                <input type="hidden" name='submit' value='API_DELETE'>
+                <button type="submit" class="text-center ms-2 me-2 text-danger" onclick="return confirm('Are you sure you want to delete?');" style="border:none; background:transparent;" ><i class="bi bi-trash-fill"></i></button>
+                </form>
+          </a>
         </td>
       </tr>
   <?php
       $i++;
     }
-  }
 //   else {
 //     // If no data is available
 //     echo "<tr><td colspan='6'>No data available</td></tr>";
@@ -66,11 +72,10 @@ padding: 7px !important;
   ?>
 </tbody>
   </table>
-  <!-- datatable end -->
-  <!-- datatable end -->
+
 </div>
 </div>
-<!-- add new category -->
+
 <!-- add new product  -->
 <div class="modal ms-5 ps-5" id="exampleModalToggle" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleModalToggle"
   tabindex="-1">
@@ -101,10 +106,7 @@ padding: 7px !important;
   </div>
 </div>
 <!-- add new category -->
-<!-- add new product  -->
 
-<!-- Update product -->
-<!-- Update product -->
 <?php include "../footer.php"; ?>
 <script>
     $(document).on('click','#subm',function(e){

@@ -65,6 +65,7 @@
     {        
 
     	if ($QID=='PASSWORD_INFO')  { $QRY = "SELECT admin_pass FROM admin WHERE email='$P1'"; } 
+    	if ($QID=='API_INFO')  { $QRY = "SELECT * FROM api ORDER BY id DESC"; } 
 
         $rs = $this->connection->query($QRY);
         

@@ -27,15 +27,19 @@
 
 	        $RESULT = $OMS->OMS_EXECUTE($UPDATE);
             if ($RESULT == 1) {
+                //$_SESSION['success'] = "Password Changed Successfully.";
                 echo "<script> alert(\"Password Changed Successfully.\"); </script>";
             } else {
+                //$_SESSION['error'] = "Changing Password Failed.";
                 echo "<script> alert(\"Changing Password Failed.\"); </script>";
             }
         } else {
+            //$_SESSION['error'] = "Old Password do not match.";
                 echo "<script> alert(\"Old Password do not match.\"); </script>";
         }
         
 	} else {
+        //$_SESSION['error'] = "New Password and Confirm Password do not match.";
                 echo "<script> alert(\"New Password and Confirm Password do not match.\"); </script>";
 	}
 		

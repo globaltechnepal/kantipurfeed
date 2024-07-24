@@ -21,7 +21,6 @@ if (isset($_SESSION['adminemail']) && !empty($_SESSION['adminemail'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard</title>
      <link rel="icon" type="images/ico" href="favicon.ico">
 
     <!-- datatable -->
