@@ -17,7 +17,7 @@ if (isset($_POST["adminSubmit"])) {
         
         // Prepare the query to check user credentials
         $QRY = "SELECT * FROM admin WHERE email='$EMAIL' AND admin_pass='$ENCRYPTED_PASSWORD' LIMIT 1";
-        $rs = mysqli_query($connection, $QRY);
+        $rs = mysqli_query($connect, $QRY);
               
         if ($rs) {
             $rows = mysqli_num_rows($rs);
@@ -43,7 +43,7 @@ if (isset($_POST["adminSubmit"])) {
 }
 
 // Close the database connection
-mysqli_close($connection);
+mysqli_close($connect);
 ?>
 
 

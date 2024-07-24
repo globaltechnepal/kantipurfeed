@@ -1,8 +1,8 @@
 <?php
     session_start();
-   include_once 'connect.php';
+   include_once 'oms_connect.php';
 
-   class erp_function extends erp_connect
+   class oms_function extends oms_connect
    {
 
     public function __construct()
@@ -63,6 +63,8 @@
 
     public function OMS_DATA($QID, $P1=NULL, $P2=NULL, $P3=NULL, $P4=NULL, $P5=NULL)
     {        
+
+    	if ($QID=='PASSWORD_INFO')  { $QRY = "SELECT admin_pass FROM admin WHERE email='$P1'"; } 
 
         $rs = $this->connection->query($QRY);
         

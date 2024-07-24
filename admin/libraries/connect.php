@@ -1,28 +1,17 @@
 <?php
 session_start();
-class erp_connect
-{    
-    private $_host = 'localhost';
-    private $_username = 'root';
-    private $_password = '';
-    private $_database = 'kantipurfeed';
-    
-    protected $connection;
-    
-    public function __construct()
-    {
-        if (!isset($this->connection)) {
-            
-            $this->connection = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
-	    mysqli_set_charset($this->connection,"utf8");
-            
-            if (!$this->connection) {
-                echo 'Cannot connect to database server';
-                exit;
-            }            
-        }    
-        
-        return $this->connection;
-    }
-}
+  $connect = mysqli_connect("localhost", "root", "", "kantipurfeed");
+  mysqli_set_charset( $connect, 'UTF8');
+
+  if (!$connect) {
+	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+	    exit;
+  }
+
+  //echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
+  //echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
+  //mysqli_close($connect);
+
 ?>

@@ -17,7 +17,7 @@
 	    
         $DATA_BANK = $OMS->OMS_DATA('PASSWORD_INFO', $EMAIL);
             foreach ($DATA_BANK AS $ROW) {
-            $PASSWORD = $ROW['admin_pass'];  
+            $PASSWORD = $ROW['admin_pass'];
         }
         if ($PASSWORD == $OLD_PASSWORD){
 	        $NEW_PASSWORD = md5($NEW_PASSWORD);
