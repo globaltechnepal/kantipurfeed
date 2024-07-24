@@ -1,0 +1,270 @@
+Array
+(
+    [USER] => delinepal
+    [HOME] => /home/delinepal
+    [SCRIPT_NAME] => /order_processing.php
+    [REQUEST_URI] => /order_processing.php
+    [QUERY_STRING] => 
+    [REQUEST_METHOD] => POST
+    [SERVER_PROTOCOL] => HTTP/2.0
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [REMOTE_PORT] => 38109
+    [SCRIPT_FILENAME] => /home/delinepal/public_html/order_processing.php
+    [SERVER_ADMIN] => webmaster@delinepal.com
+    [CONTEXT_DOCUMENT_ROOT] => /home/delinepal/public_html
+    [CONTEXT_PREFIX] => 
+    [REQUEST_SCHEME] => https
+    [DOCUMENT_ROOT] => /home/delinepal/public_html
+    [REMOTE_ADDR] => 27.34.64.136
+    [SERVER_PORT] => 443
+    [SERVER_ADDR] => 68.178.169.9
+    [SERVER_NAME] => delinepal.com
+    [SERVER_SOFTWARE] => Apache
+    [SERVER_SIGNATURE] => 
+    [PATH] => /usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin
+    [HTTP_X_HTTPS] => 1
+    [HTTP_HOST] => delinepal.com
+    [HTTP_COOKIE] => PHPSESSID=1901b80d021ceb0dbeef78eb46172fc0; timezone=Asia/Kathmandu; cpsession=delinepal%3av2SZNCuWSymOGeuu%2c18a34256d55b7b35bbe457dd25720241
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9,hi;q=0.8,ne;q=0.7
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_REFERER] => https://delinepal.com/cartCheckout.php
+    [HTTP_SEC_FETCH_DEST] => empty
+    [HTTP_SEC_FETCH_MODE] => cors
+    [HTTP_SEC_FETCH_SITE] => same-origin
+    [HTTP_ORIGIN] => https://delinepal.com
+    [HTTP_SEC_CH_UA_PLATFORM] => "Android"
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+    [HTTP_SEC_CH_UA_MOBILE] => ?1
+    [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+    [CONTENT_TYPE] => application/json
+    [HTTP_ACCEPT] => */*
+    [HTTP_SEC_CH_UA] => "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+    [CONTENT_LENGTH] => 175
+    [proxy-nokeepalive] => 1
+    [H2_STREAM_TAG] => 646091-108-1
+    [H2_STREAM_ID] => 1
+    [H2_PUSHED_ON] => 
+    [H2_PUSHED] => 
+    [H2_PUSH] => off
+    [H2PUSH] => off
+    [HTTP2] => on
+    [SSL_TLS_SNI] => delinepal.com
+    [HTTPS] => on
+    [SCRIPT_URI] => https://delinepal.com/order_processing.php
+    [SCRIPT_URL] => /order_processing.php
+    [UNIQUE_ID] => ZYlePsHd5VG9Ue4771a5UAABFQM
+    [FCGI_ROLE] => RESPONDER
+    [PHP_SELF] => /order_processing.php
+    [REQUEST_TIME_FLOAT] => 1703501374.3993
+    [REQUEST_TIME] => 1703501374
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+{"DbName":"erpdemo101","UserCode":"oms","Remarks":"Confirm","GLCode":"50","Lat":"10001","Lng":"10001","BToBorderDetails":[{"Pcode":30,"Qty":2,"Rate":60000,"TotalAmt":120000}]}
+Array
+(
+    [USER] => delinepal
+    [HOME] => /home/delinepal
+    [SCRIPT_NAME] => /order_processing.php
+    [REQUEST_URI] => /order_processing.php
+    [QUERY_STRING] => 
+    [REQUEST_METHOD] => POST
+    [SERVER_PROTOCOL] => HTTP/2.0
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [REMOTE_PORT] => 26224
+    [SCRIPT_FILENAME] => /home/delinepal/public_html/order_processing.php
+    [SERVER_ADMIN] => webmaster@delinepal.com
+    [CONTEXT_DOCUMENT_ROOT] => /home/delinepal/public_html
+    [CONTEXT_PREFIX] => 
+    [REQUEST_SCHEME] => https
+    [DOCUMENT_ROOT] => /home/delinepal/public_html
+    [REMOTE_ADDR] => 27.34.64.136
+    [SERVER_PORT] => 443
+    [SERVER_ADDR] => 68.178.169.9
+    [SERVER_NAME] => delinepal.com
+    [SERVER_SOFTWARE] => Apache
+    [SERVER_SIGNATURE] => 
+    [PATH] => /usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin
+    [HTTP_X_HTTPS] => 1
+    [HTTP_HOST] => delinepal.com
+    [HTTP_COOKIE] => PHPSESSID=1901b80d021ceb0dbeef78eb46172fc0; timezone=Asia/Kathmandu; cpsession=delinepal%3av2SZNCuWSymOGeuu%2c18a34256d55b7b35bbe457dd25720241
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9,hi;q=0.8,ne;q=0.7
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_REFERER] => https://delinepal.com/cartCheckout.php
+    [HTTP_SEC_FETCH_DEST] => empty
+    [HTTP_SEC_FETCH_MODE] => cors
+    [HTTP_SEC_FETCH_SITE] => same-origin
+    [HTTP_ORIGIN] => https://delinepal.com
+    [HTTP_SEC_CH_UA_PLATFORM] => "Android"
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+    [HTTP_SEC_CH_UA_MOBILE] => ?1
+    [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+    [CONTENT_TYPE] => application/json
+    [HTTP_ACCEPT] => */*
+    [HTTP_SEC_CH_UA] => "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+    [CONTENT_LENGTH] => 175
+    [proxy-nokeepalive] => 1
+    [H2_STREAM_TAG] => 634772-63-1
+    [H2_STREAM_ID] => 1
+    [H2_PUSHED_ON] => 
+    [H2_PUSHED] => 
+    [H2_PUSH] => off
+    [H2PUSH] => off
+    [HTTP2] => on
+    [SSL_TLS_SNI] => delinepal.com
+    [HTTPS] => on
+    [SCRIPT_URI] => https://delinepal.com/order_processing.php
+    [SCRIPT_URL] => /order_processing.php
+    [UNIQUE_ID] => ZYlgjAKlCANReOfoaBkvIAAARRE
+    [FCGI_ROLE] => RESPONDER
+    [PHP_SELF] => /order_processing.php
+    [REQUEST_TIME_FLOAT] => 1703501964.4825
+    [REQUEST_TIME] => 1703501964
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+{"DbName":"erpdemo101","UserCode":"oms","Remarks":"Confirm","GLCode":"50","Lat":"10001","Lng":"10001","BToBorderDetails":[{"Pcode":30,"Qty":2,"Rate":60000,"TotalAmt":120000}]}
+Received at 2023-12-25 11:01:48:
+Array
+(
+    [USER] => delinepal
+    [HOME] => /home/delinepal
+    [SCRIPT_NAME] => /order_processing.php
+    [REQUEST_URI] => /order_processing.php
+    [QUERY_STRING] => 
+    [REQUEST_METHOD] => POST
+    [SERVER_PROTOCOL] => HTTP/2.0
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [REMOTE_PORT] => 35021
+    [SCRIPT_FILENAME] => /home/delinepal/public_html/order_processing.php
+    [SERVER_ADMIN] => webmaster@delinepal.com
+    [CONTEXT_DOCUMENT_ROOT] => /home/delinepal/public_html
+    [CONTEXT_PREFIX] => 
+    [REQUEST_SCHEME] => https
+    [DOCUMENT_ROOT] => /home/delinepal/public_html
+    [REMOTE_ADDR] => 27.34.64.136
+    [SERVER_PORT] => 443
+    [SERVER_ADDR] => 68.178.169.9
+    [SERVER_NAME] => delinepal.com
+    [SERVER_SOFTWARE] => Apache
+    [SERVER_SIGNATURE] => 
+    [PATH] => /usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin
+    [HTTP_X_HTTPS] => 1
+    [HTTP_HOST] => delinepal.com
+    [HTTP_COOKIE] => PHPSESSID=1901b80d021ceb0dbeef78eb46172fc0; timezone=Asia/Kathmandu; cpsession=delinepal%3av2SZNCuWSymOGeuu%2c18a34256d55b7b35bbe457dd25720241
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9,hi;q=0.8,ne;q=0.7
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_REFERER] => https://delinepal.com/cartCheckout.php
+    [HTTP_SEC_FETCH_DEST] => empty
+    [HTTP_SEC_FETCH_MODE] => cors
+    [HTTP_SEC_FETCH_SITE] => same-origin
+    [HTTP_ORIGIN] => https://delinepal.com
+    [HTTP_SEC_CH_UA_PLATFORM] => "Android"
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+    [HTTP_SEC_CH_UA_MOBILE] => ?1
+    [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+    [CONTENT_TYPE] => application/json
+    [HTTP_ACCEPT] => */*
+    [HTTP_SEC_CH_UA] => "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+    [CONTENT_LENGTH] => 175
+    [proxy-nokeepalive] => 1
+    [H2_STREAM_TAG] => 331647-148-1
+    [H2_STREAM_ID] => 1
+    [H2_PUSHED_ON] => 
+    [H2_PUSHED] => 
+    [H2_PUSH] => off
+    [H2PUSH] => off
+    [HTTP2] => on
+    [SSL_TLS_SNI] => delinepal.com
+    [HTTPS] => on
+    [SCRIPT_URI] => https://delinepal.com/order_processing.php
+    [SCRIPT_URL] => /order_processing.php
+    [UNIQUE_ID] => ZYlhHG7_R9-l4JSrOFd80QAAzhA
+    [FCGI_ROLE] => RESPONDER
+    [PHP_SELF] => /order_processing.php
+    [REQUEST_TIME_FLOAT] => 1703502108.5323
+    [REQUEST_TIME] => 1703502108
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+{"DbName":"erpdemo101","UserCode":"oms","Remarks":"Confirm","GLCode":"50","Lat":"10001","Lng":"10001","BToBorderDetails":[{"Pcode":30,"Qty":2,"Rate":60000,"TotalAmt":120000}]}
+Received at 2023-12-25 11:02:55:
+Array
+(
+    [USER] => delinepal
+    [HOME] => /home/delinepal
+    [SCRIPT_NAME] => /order_processing.php
+    [REQUEST_URI] => /order_processing.php
+    [QUERY_STRING] => 
+    [REQUEST_METHOD] => POST
+    [SERVER_PROTOCOL] => HTTP/2.0
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [REMOTE_PORT] => 13082
+    [SCRIPT_FILENAME] => /home/delinepal/public_html/order_processing.php
+    [SERVER_ADMIN] => webmaster@delinepal.com
+    [CONTEXT_DOCUMENT_ROOT] => /home/delinepal/public_html
+    [CONTEXT_PREFIX] => 
+    [REQUEST_SCHEME] => https
+    [DOCUMENT_ROOT] => /home/delinepal/public_html
+    [REMOTE_ADDR] => 27.34.64.136
+    [SERVER_PORT] => 443
+    [SERVER_ADDR] => 68.178.169.9
+    [SERVER_NAME] => delinepal.com
+    [SERVER_SOFTWARE] => Apache
+    [SERVER_SIGNATURE] => 
+    [PATH] => /usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin
+    [HTTP_X_HTTPS] => 1
+    [HTTP_HOST] => delinepal.com
+    [HTTP_COOKIE] => PHPSESSID=1901b80d021ceb0dbeef78eb46172fc0; timezone=Asia/Kathmandu; cpsession=delinepal%3av2SZNCuWSymOGeuu%2c18a34256d55b7b35bbe457dd25720241
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9,hi;q=0.8,ne;q=0.7
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_REFERER] => https://delinepal.com/cartCheckout.php
+    [HTTP_SEC_FETCH_DEST] => empty
+    [HTTP_SEC_FETCH_MODE] => cors
+    [HTTP_SEC_FETCH_SITE] => same-origin
+    [HTTP_ORIGIN] => https://delinepal.com
+    [HTTP_SEC_CH_UA_PLATFORM] => "Android"
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+    [HTTP_SEC_CH_UA_MOBILE] => ?1
+    [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+    [CONTENT_TYPE] => application/json
+    [HTTP_ACCEPT] => */*
+    [HTTP_SEC_CH_UA] => "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+    [CONTENT_LENGTH] => 175
+    [proxy-nokeepalive] => 1
+    [H2_STREAM_TAG] => 331644-183-1
+    [H2_STREAM_ID] => 1
+    [H2_PUSHED_ON] => 
+    [H2_PUSHED] => 
+    [H2_PUSH] => off
+    [H2PUSH] => off
+    [HTTP2] => on
+    [SSL_TLS_SNI] => delinepal.com
+    [HTTPS] => on
+    [SCRIPT_URI] => https://delinepal.com/order_processing.php
+    [SCRIPT_URL] => /order_processing.php
+    [UNIQUE_ID] => ZYlhXyM1x7I6NU3EYN86AwAADgI
+    [FCGI_ROLE] => RESPONDER
+    [PHP_SELF] => /order_processing.php
+    [REQUEST_TIME_FLOAT] => 1703502175.4605
+    [REQUEST_TIME] => 1703502175
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+
+{"DbName":"erpdemo101","UserCode":"oms","Remarks":"Confirm","GLCode":"50","Lat":"10001","Lng":"10001","BToBorderDetails":[{"Pcode":30,"Qty":2,"Rate":60000,"TotalAmt":120000}]}
